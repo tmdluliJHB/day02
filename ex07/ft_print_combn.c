@@ -9,24 +9,19 @@
 /*   Updated: 2020/06/19 15:05:59 by tmdluli          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-int ft_putchar(char c)
-{
-    write(1, &c, 1);
-    return 0;
-}
+int ft_putchar(char c);
 
 int power(int n, int exp)
 {
-    int result = n;
+    int result;
+    result = n;
     while(exp > 1)
     {
         result *= n;
         --exp;
     }
-    return result;
+
+    return (result)
 }
 
 void    ft_printnbr(int nb, int n)
@@ -54,31 +49,34 @@ void less(int n, int total)
 int is_last_one(int n, int exp)
 {
     if(exp == 1)
-        return n == 9;
+        return (n == 9);
     else if(exp == 2)
-        return n == 89;
+        return (n == 89);
     else if(exp == 3)
-        return n == 789;
+        return (n == 789);
     else if(exp == 4)
-        return n == 6789;
+        return (n == 6789);
     else if(exp == 5)
-        return n == 56789;
+        return (n == 56789);
     else if(exp == 6)
-        return n == 456789;
+        return (n == 456789);
     else if(exp == 7)
-        return n == 3456789;
+        return (n == 3456789);
     else if(exp == 8)
-        return n == 23456789;
+        return (n == 23456789);
     else if(exp == 9)
-        return n == 123456789;
-    else return 1;
+        return (n == 123456789);
+    else
+	return (1);
 }
 
 void ft_print_combn(int n)
 {
-    int i = 1;
+    int i;
+    i  = 1;
     int x;
-    int total = power(10, n);
+    int total;
+    total  = power(10, n);
 
     while(i < total)
     {
