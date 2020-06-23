@@ -10,17 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int ft_putchar(char c)
-{
-    write(1, &c, 1);
-    return 0;
-}
+int ft_putchar(char c);
 
 void ft_print_numbers(void)
 {
-    char ch = '0';
+    char ch;
+    ch  = '0';
     
     while(ch <= '9')
     {
