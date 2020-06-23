@@ -10,13 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int ft_putchar(char c)
-{
-    write(1, &c, 1);
-    return 0;
-}
+int ft_putchar(char c);
 
 void ft_print_digits(int num)
 {
@@ -46,7 +40,8 @@ void f_print_num(int ch1, int ch2)
 
 void ft_print_comb2(void)
 {
-    int num1, num2;
+    int num1;
+    int num2;
     
     num1 = 0;
     while(num1 <= 99)
