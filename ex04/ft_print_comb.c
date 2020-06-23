@@ -10,14 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int ft_putchar(char c)
-{
-    write(1, &c, 1);
-    
-    return 0;
-}
+int ft_putchar(char c);
 
 void ft_print_num(char ch1, char ch2, char ch3)
 {
@@ -34,7 +27,9 @@ void ft_print_num(char ch1, char ch2, char ch3)
 
 void ft_print_comb(void)
 {
-    int n1, n2, n3;
+    int n1;
+    int n2;
+    int n3;
     
     n1 = 0;
     while(n1 <= 9)
